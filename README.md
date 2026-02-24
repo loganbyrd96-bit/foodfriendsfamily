@@ -1,2 +1,2 @@
 # foodfriendsfamily
-Static site for elder companionship services
+Static site for future community initiative
