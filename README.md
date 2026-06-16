@@ -1,2 +1,2 @@
 # foodfriendsfamily
-Static site for future community initiative
+Community project rebuilding third spaces through shared meals and local potlucks.
