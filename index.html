@@ -15,7 +15,7 @@
   --card:#FFF8F3;
 }
 
-*{box-sizing:border-box;}
+*{ box-sizing:border-box; }
 
 body{
   margin:0;
@@ -38,8 +38,15 @@ body{
   text-align:center;
 }
 
+.logo{
+  width:220px;
+  max-width:60%;
+  border-radius:28px;
+  margin-bottom:18px;
+}
+
 .brand{
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   font-weight:600;
   letter-spacing:.4px;
   color:var(--terra-dark);
@@ -55,7 +62,7 @@ h1{
 p{
   line-height:1.7;
   color:var(--muted);
-  margin:8px 0;
+  margin:10px 0;
 }
 
 a{
@@ -71,15 +78,12 @@ a{
   background:rgba(196,90,58,.12);
   border:1px solid rgba(196,90,58,.25);
   color:var(--terra-dark);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   font-weight:600;
 }
 
-.anim{
-  margin-top:44px;
-}
+.anim{ margin-top:44px; }
 
-/* Steam */
 .steam path{
   fill:none;
   stroke:rgba(196,90,58,.75);
@@ -102,22 +106,22 @@ a{
   100%{stroke-dashoffset:-120;transform:translateY(-14px);opacity:0;}
 }
 
-/* Simmer */
 .soupSurface{
   animation:simmer 2.6s ease-in-out infinite;
   transform-origin:center;
 }
+
 @keyframes simmer{
   0%,100%{transform:scaleX(1);}
   50%{transform:scaleX(1.03);}
 }
 
-/* Bubbles */
 .bubble{
   fill:rgba(255,255,255,.65);
   opacity:0;
   animation:bubble 3.2s ease-in-out infinite;
 }
+
 .b2{animation-delay:.7s;}
 .b3{animation-delay:1.4s;}
 .b4{animation-delay:2.1s;}
@@ -131,7 +135,7 @@ a{
 
 footer{
   margin-top:30px;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   font-size:.9rem;
   color:rgba(0,0,0,.55);
 }
@@ -141,12 +145,20 @@ footer{
 <body>
 
 <div class="card">
+
+  <img
+    class="logo"
+    src="http://i.picasion.com/resize93/4206dbd1fde9076cd68f551697869af8.png"
+    alt="Harper the Honeybee"
+  >
+
   <div class="brand">FoodFriendsFamily.org</div>
 
   <h1>Under Development</h1>
 
-  <p>A community initiative focused on food, connection, and sober third spaces.</p>
-  <p>Pilot gatherings will be small, local, and intentionally slow.</p>
+  <p>A community initiative focused on food, friendship, and sober third spaces.</p>
+
+  <p>Early gatherings will be small, local, and intentionally slow.</p>
 
   <p>
     Contact:
@@ -155,10 +167,21 @@ footer{
     </a>
   </p>
 
+  <p>
+    Join:
+    <a href="https://discord.gg/Xs6fYNQrbZ" target="_blank">Discord</a>
+    ·
+    <a href="https://www.facebook.com/share/g/1Yfwepa1ug/?mibextid=wwXIfr" target="_blank">Facebook Group</a>
+    ·
+    <a href="https://www.instagram.com/foodfriendsfamily.community?igsh=MXBub3R0emxxOXA1YQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+    ·
+    <a href="https://bumble.com/bff/invite/6701b970-be5d-4cd5-a4f9-aa5e1628883b" target="_blank">Bumble For Friends</a>
+    ·
+    <a href="https://lex.lgbt/g/Food+Friends+Family-rizvRW2vEr" target="_blank">Lex Group</a>
+  </p>
+
   <div class="anim">
     <svg width="100%" viewBox="0 0 900 520" aria-label="A simmering stock pot on a stove">
-
-      <!-- Steam -->
       <g class="steam">
         <path d="M390,125 C370,98 400,88 385,63 C370,43 390,33 380,18" />
         <path d="M425,125 C405,98 435,88 420,63 C405,43 425,33 415,18" />
@@ -167,55 +190,24 @@ footer{
         <path d="M530,125 C510,98 540,88 525,63 C510,43 530,33 520,18" />
       </g>
 
-      <!-- Stove -->
-      <rect x="190" y="440" width="520" height="18" rx="9"
-            fill="rgba(0,0,0,.18)"/>
-      <ellipse cx="450" cy="432" rx="190" ry="20"
-               fill="none"
-               stroke="rgba(196,90,58,.6)"
-               stroke-width="6"/>
+      <rect x="190" y="440" width="520" height="18" rx="9" fill="rgba(0,0,0,.18)"/>
+      <ellipse cx="450" cy="432" rx="190" ry="20" fill="none" stroke="rgba(196,90,58,.6)" stroke-width="6"/>
 
-      <!-- Pot -->
-      <rect x="310" y="220" width="280" height="210" rx="28"
-            fill="#ffffff"
-            stroke="rgba(196,90,58,.9)"
-            stroke-width="6"/>
+      <rect x="310" y="220" width="280" height="210" rx="28" fill="#ffffff" stroke="rgba(196,90,58,.9)" stroke-width="6"/>
 
-      <!-- Extended handles -->
-      <line x1="310" y1="250" x2="255" y2="215"
-            stroke="rgba(196,90,58,.9)"
-            stroke-width="10"
-            stroke-linecap="round"/>
-      <line x1="590" y1="250" x2="645" y2="215"
-            stroke="rgba(196,90,58,.9)"
-            stroke-width="10"
-            stroke-linecap="round"/>
+      <line x1="310" y1="250" x2="255" y2="215" stroke="rgba(196,90,58,.9)" stroke-width="10" stroke-linecap="round"/>
+      <line x1="590" y1="250" x2="645" y2="215" stroke="rgba(196,90,58,.9)" stroke-width="10" stroke-linecap="round"/>
 
-      <!-- Rim -->
-      <ellipse cx="450" cy="230" rx="165" ry="30"
-               fill="rgba(196,90,58,.12)"
-               stroke="rgba(196,90,58,.9)"
-               stroke-width="6"/>
+      <ellipse cx="450" cy="230" rx="165" ry="30" fill="rgba(196,90,58,.12)" stroke="rgba(196,90,58,.9)" stroke-width="6"/>
 
-      <!-- Soup -->
-      <ellipse class="soupSurface"
-               cx="450"
-               cy="236"
-               rx="145"
-               ry="20"
-               fill="rgba(196,90,58,.9)"/>
+      <ellipse class="soupSurface" cx="450" cy="236" rx="145" ry="20" fill="rgba(196,90,58,.9)"/>
 
-      <!-- Bubbles -->
       <circle class="bubble b1" cx="410" cy="232" r="7"/>
       <circle class="bubble b2" cx="470" cy="240" r="6"/>
       <circle class="bubble b3" cx="505" cy="230" r="6.5"/>
       <circle class="bubble b4" cx="445" cy="245" r="5.5"/>
 
-      <!-- Ladle -->
-      <line x1="545" y1="150" x2="500" y2="232"
-            stroke="rgba(142,61,40,.95)"
-            stroke-width="12"
-            stroke-linecap="round"/>
+      <line x1="545" y1="150" x2="500" y2="232" stroke="rgba(142,61,40,.95)" stroke-width="12" stroke-linecap="round"/>
     </svg>
 
     <div class="tag">food • friends • family</div>
@@ -224,6 +216,7 @@ footer{
   <footer>
     © <span id="year"></span> FoodFriendsFamily.org
   </footer>
+
 </div>
 
 <script>
